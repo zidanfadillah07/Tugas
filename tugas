@@ -1,0 +1,79 @@
+package tugasss;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author lenovo
+ */
+public class Tugasss {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+          Scanner in = new Scanner(System.in);
+        String jalur,gol;
+        System.out.println("Masukkan pilihan jalur \n SBMPTN \n SNMPTN \n MANDIRI ");
+        jalur = in.next();
+        if (jalur.equalsIgnoreCase("SBMPTN")){
+            System.out.println("Pilih golongan pendaftaran \n A \n B \n C");
+            gol = in.next();
+            if (gol.equalsIgnoreCase("A")){
+                System.out.println("DSP = 5 juta");
+                System.out.println("SPP = 500 ribu");
+            }
+            else if (gol.equalsIgnoreCase("B")){
+                System.out.println("DSP = 15 juta ");
+                System.out.println("SPP = 1 juta");
+            }
+            else if (gol.equalsIgnoreCase("C")){
+                System.out.println("DSP = 30 juta ");
+                System.out.println("SPP = 2 juta ");
+            }
+             else {
+            System.out.println("MAAF PILIHAN ANDA TIDAK TERDAFTAR");}
+            
+        }else if (jalur.equalsIgnoreCase("SNMPTN")){
+            System.out.println("Pilih golongan pendaftaran \n A \n B \n C");
+            gol = in.next();
+            if (gol.equalsIgnoreCase("A")){
+                System.out.println("DSP = 7 juta");
+                System.out.println("SPP = 500 ribu");
+            }
+            else if (gol.equalsIgnoreCase("B")){
+                System.out.println("DSP = 17 juta");
+                System.out.println("SPP = 1 juta");
+            }
+            else if (gol.equalsIgnoreCase("C")){
+                System.out.println("DSP = 35 juta");
+                System.out.println("SPP = 2 juta");
+            }
+             else {
+            System.out.println("MAAF PILIHAN ANDA TIDAK TERDAFTAR");
+        }}
+        else if (jalur.equalsIgnoreCase("Mandiri")){
+           System.out.println("Pilih golongan pendaftaran \n A \n B \n C");
+            gol = in.next();
+            if (gol.equalsIgnoreCase("A")){
+                System.out.println("DSP = 10 juta ");
+                System.out.println("SPP = 1 juta ");
+                }
+            else if (gol.equalsIgnoreCase("B")){
+                System.out.println("DSP = 25 juta");
+                System.out.println("SPP = 2 juta");
+                }
+            else if (gol.equalsIgnoreCase("C")){
+                System.out.println("DSP = 50 juta");
+                System.out.println("SPP = 3 juta");
+                        }
+            else {
+            System.out.println("MAAF PILIHAN ANDA TIDAK TERDAFTAR");
+            }
+        }
+        else {
+            System.out.println("MAAF JALUR ANDA TIDAK TERDAFTAR");
+    }}
+    
+}
